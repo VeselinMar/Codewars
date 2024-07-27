@@ -1,3 +1,6 @@
+# basic calculator whose functionality is implemented through elif functions
+# operations or performed when the user provides the following form:
+# operator(+, -, /, *), first number, second number
 def basic_op(operator, value1, value2):
     if '+' in operator:
         return value1 + value2
@@ -6,7 +9,7 @@ def basic_op(operator, value1, value2):
     elif '*' in operator:
         return value1 * value2
     elif '/' in operator:
-        return value1 / value2
+        return round(value1 / value2)
 
 
 line = (input().strip('()')).split(',')
