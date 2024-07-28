@@ -1,16 +1,16 @@
 def duplicate_encode(word):
-    duplication_checker = 0
+    # Create a dictionary to count occurrences of each character, ignoring case.
+    counts = {}
+    for char in word.lower():
+        counts[char] = counts.get(char, 0) + 1
+
+    # Construct new word using the counts
     new_word = ''
     for char in word:
-        for ind in range(len(word)):
-            if char.lower() == word[ind].lower():
-                duplication_checker += 1
-                if duplication_checker > 1:
-                    new_word += ')'
-                    break
-        if duplication_checker == 1:
+        if counts[char.lower()] > 1:
+            new_word += ')'
+        else:
             new_word += '('
-        duplication_checker = 0
 
     return new_word
 
