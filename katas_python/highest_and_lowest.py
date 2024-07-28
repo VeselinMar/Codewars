@@ -1,7 +1,11 @@
 def high_and_low(numbers):
-    numbers = list(map(int, numbers.split()))
-    numbers_string = f'{max(numbers)} {min(numbers)}'
-    return numbers_string
+    # Split the input string into a list of integers
+    numbers_list = list(map(int, numbers.split()))
+    # Find the maximum and minimum values
+    highest = max(numbers_list)
+    lowest = min(numbers_list)
+    # Return them as a formatted string
+    return f"{highest} {lowest}"
 
 
 line = input()
