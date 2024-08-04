@@ -9,6 +9,6 @@ def my_languages(results):
     return certificates
 
 
-print(my_languages({"Java": 10, "Ruby": 80, "Python": 65}))
+print(my_languages({"Java": 10, "Ruby": 80, "Python": 66}))
 print(my_languages({"Hindi": 60, "Dutch": 93, "Greek": 71}))
 print(my_languages({"C++": 50, "ASM": 10, "Haskell": 20}))
